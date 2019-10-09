@@ -11,6 +11,31 @@ body {
   background: #fff;
 }
 
+#main {
+  transition: margin-right .7s;
+
+}
+
+#open {
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--white);
+  display: none;
+
+  @media all and (max-width:768px) {
+    display: block !important;
+  }
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #444;
+}
+
 h1,
 h2,
 h3,

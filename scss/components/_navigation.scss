@@ -1,9 +1,11 @@
 nav {
     background: var(--dark);
+    position: fixed;
+    top: 0;
+    left: 0;
 
     .navbar-brand {
         width: 50px;
-
         height: auto;
 
         img {
@@ -41,15 +43,52 @@ nav {
                 font-weight: 700;
             }
         }
+
+        @media all and (max-width:999px) {
+            display: none;
+        }
     }
 
 
 
 
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--dark);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all .5s ease-out;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    li {
 
 
+        a {
+
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+
+            transition: 0.3s;
 
 
+            &:hover {
+                color: #f1f1f1;
+            }
+        }
+    }
 
 
 }
