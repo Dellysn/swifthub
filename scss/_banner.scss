@@ -1,0 +1,25 @@
+#banner {
+
+    color: var(--white);
+    // height: inherit;
+    height: 80vh;
+    display: flex;
+    font-size: 100%;
+
+
+    .row {
+        justify-content: center;
+        align-items: center;
+
+        // margin-top: 10rem;
+        h1 {
+            font-size: 3.35rem;
+        }
+
+        p {
+            line-height: 40px;
+            font-weight: 200;
+            font-size: 1.5rem;
+        }
+    }
+}

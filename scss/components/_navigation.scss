@@ -1,0 +1,55 @@
+nav {
+    background: var(--dark);
+
+    .navbar-brand {
+        width: 50px;
+
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+
+        .dropdown-menu {
+            top: 135%;
+            border-radius: 0;
+            background-color: #741717;
+            width: auto !important;
+            // padding-left: 4rem;
+            // display: flex;
+            column-count: 4;
+            column-rule: #333 solid 2px;
+
+            a {
+                color: var(--white);
+            }
+
+        }
+
+        .nav-item {
+            font-size: 100%;
+
+            .nav-link {
+                color: var(--white) !important;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}

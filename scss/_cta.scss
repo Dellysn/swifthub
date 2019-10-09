@@ -1,0 +1,74 @@
+#cta {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+
+    .container {
+
+        .row {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            h1 {
+                padding-top: 1.4rem;
+            }
+        }
+
+        #fancy-box {
+            .card {
+                background-color: red;
+                border: none;
+            }
+        }
+    }
+}
+
+#testimonial {
+    width: 100%;
+    position: relative;
+
+    height: 300px;
+
+    .container-fluid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+
+        .row {
+            height: 300px;
+            color: var(--white);
+
+            .side-one {
+                background: url(../assets/img/background.jpg) no-repeat;
+                background-size: cover;
+                // background-attachment: fixed;
+                background-position: center;
+                padding: 6.5rem;
+                // color:
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .side-two {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #333;
+                padding: 4rem;
+            }
+        }
+    }
+}
+
+#partners {
+    .container {
+        .action-btn {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

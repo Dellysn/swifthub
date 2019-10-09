@@ -1,0 +1,40 @@
+// Core variables and mixins
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.heading-1 {
+    @media all and (max-width:425px) {
+        font-size: 1.5em;
+    }
+}
+
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+@import "main.scss";
+@import "cta.scss";
+@import "banner.scss";
+
+
+// Components
+@import "components/navigation.scss";
+@import "components/footer.scss";
+
+#top {
+    background: url(../assets/img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+
+}

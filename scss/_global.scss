@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include body-font;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 99;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include body-font;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
