@@ -101,9 +101,54 @@ img {
   padding-top: 1.4rem;
 }
 
-#cta .container #fancy-box .card {
-  background-color: red;
-  border: none;
+#cta .bg-1 {
+  overflow: hidden;
+  background-image: var(--dark-overlay), url(../assets/img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cta .bg-2 {
+  background-image: var(--dark-overlay), url(../assets/img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cta .bg-3 {
+  background-image: var(--dark-overlay), url(../assets/img/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cta .bg-4 {
+  background-image: var(--dark-overlay), url(../assets/img/bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cta .bg-5 {
+  background-image: var(--dark-overlay), url(../assets/img/bg5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cta .bg-6 {
+  background-image: var(--dark-overlay), url(../assets/img/bg6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#cta .bg-7 {
+  background-image: var(--dark-overlay), url(../assets/img/bg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #testimonial {
@@ -466,6 +511,46 @@ nav .navbar-nav .nav-item .nav-link {
 
 .side-nav li a:hover {
   color: #f1f1f1;
+}
+
+#fancy-box {
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#fancy-box .parent {
+  overflow: hidden;
+}
+
+#fancy-box .parent:hover .fancy-box,
+#fancy-box .parent:focus .fancy-box {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+#fancy-box .fancy-box {
+  overflow: hidden;
+  height: 400px;
+  color: var(--white);
+  border-radius: 0;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  position: relative;
+  font-weight: 100;
+}
+
+#fancy-box .fancy-box .card-body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer {

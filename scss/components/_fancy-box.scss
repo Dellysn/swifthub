@@ -1,0 +1,35 @@
+#fancy-box {
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .parent {
+
+        overflow: hidden;
+
+        &:hover .fancy-box,
+        &:focus .fancy-box {
+            transform: scale(1.05);
+        }
+    }
+
+    .fancy-box {
+        overflow: hidden;
+        height: 400px;
+        color: var(--white);
+        // border: 4px solid red;
+        border-radius: 0;
+        transition: all 500ms ease-out;
+        position: relative;
+        font-weight: 100;
+
+        // &:hover .bg-1,
+
+        .card-body {
+            //   position: absolute;display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
