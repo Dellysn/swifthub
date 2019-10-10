@@ -19,253 +19,56 @@
         overflow: hidden;
         background-image: var(--dark-overlay), url(../assets/img/bg1.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         background-position: center;
+        transition: .45s ease all;
     }
 
     .bg-2 {
         background-image: var(--dark-overlay), url(../assets/img/bg2.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         background-position: center;
+        transition: .45s ease all;
     }
 
     .bg-3 {
         background-image: var(--dark-overlay), url(../assets/img/bg3.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         background-position: center;
+        transition: .45s ease all;
     }
 
     .bg-4 {
         background-image: var(--dark-overlay), url(../assets/img/bg4.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         background-position: center;
+        transition: .45s ease all;
     }
 
     .bg-5 {
         background-image: var(--dark-overlay), url(../assets/img/bg5.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         background-position: center;
+        transition: .45s ease all;
     }
 
     .bg-6 {
         background-image: var(--dark-overlay), url(../assets/img/bg6.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         background-position: center;
+        transition: .45s ease all;
     }
 
     .bg-7 {
         background-image: var(--dark-overlay), url(../assets/img/bg7.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         background-position: center;
-    }
-}
-
-#testimonial {
-    width: 100%;
-    position: relative;
-    height: auto;
-    // padding-top: 4rem;
-    // padding-bottom: 4rem;
-
-    .container-fluid {
-        // position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-
-        .row {
-            height: auto;
-            color: var(--white);
-
-            .side-one {
-                background: url(../assets/img/background2.jpg) no-repeat;
-                background-size: cover;
-                // background-attachment: fixed;
-                background-position: center;
-                padding: 8rem;
-                // color:
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .side-two {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: #333;
-                padding: 6rem;
-            }
-        }
-    }
-}
-
-#partners {
-    width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-
-    .container {
-        .container {
-            .row {
-                .partners {
-                    margin-bottom: 2rem;
-                }
-            }
-        }
-
-        .action-btn {
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-
-#counts {
-    width: 100%;
-    height: auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-image: url(../assets/img/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    // background-attachment: fixed;
-
-    h1,
-    h3 {
-        padding: 2.4rem;
-    }
-
-    .numbers-count {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-
-        .card {
-            background: transparent;
-            width: 100%;
-            color: var(--white);
-            border: none;
-
-            h1 {
-                font-size: 4rem;
-            }
-        }
-    }
-}
-
-#contacts {
-    width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-image: var(--dark-overlay), url(../assets/img/bg5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    // background-attachment: fixed;
-    color: var(--white);
-    font-weight: 600;
-
-    .row {
-        padding-top: 2.34rem;
-        padding-bottom: 2.34rem;
-    }
-}
-
-#publication {
-    height: auto;
-    background-image: var(--dark-overlay), url(../assets/img/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-
-    .container {
-        .row {
-            margin-top: 2rem;
-
-            .card {
-                background: transparent;
-                color: inherit;
-                border-radius: 0;
-                border: none;
-
-                .card-header {
-                    border: none;
-                    background: transparent;
-                }
-            }
-        }
-    }
-}
-
-#question {
-    height: auto;
-    background-image: var(--dark-overlay), url(../assets/img/background3.jpg);
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 4.3rem;
-    padding-top: 4.3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-
-    .row {
-        .card {
-            border: none;
-            background: transparent;
-
-            .card-header,
-            .card-footer {
-                border: none;
-                background: transparent;
-            }
-        }
-    }
-}
-
-#donate {
-    height: 100%;
-
-    .row {
-        height: inherit;
-
-        .card-image {
-            padding: 5rem;
-
-            img {
-                box-shadow: 0 40px 100px rgba(0, 0, 0, 0.15),
-                    0 25px 80px rgba(0, 0, 0, 0.1);
-            }
-        }
-
-        .card {
-            background: transparent;
-            border: none;
-            padding: 5rem;
-
-            .card-header {
-                background: transparent;
-                border: none;
-            }
-        }
+        transition: .45s ease all;
     }
 }

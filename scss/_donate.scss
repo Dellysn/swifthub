@@ -1,0 +1,27 @@
+#donate {
+    height: 100%;
+
+    .row {
+        height: inherit;
+
+        .card-image {
+            padding: 5rem;
+
+            img {
+                box-shadow: 0 40px 100px rgba(0, 0, 0, 0.15),
+                    0 25px 80px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .card {
+            background: transparent;
+            border: none;
+            padding: 5rem;
+
+            .card-header {
+                background: transparent;
+                border: none;
+            }
+        }
+    }
+}

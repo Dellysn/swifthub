@@ -1,0 +1,28 @@
+#question {
+    height: auto;
+    background-image: var(--dark-overlay), url(../assets/img/background3.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 4.3rem;
+    padding-top: 4.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+
+    .row {
+        .card {
+            border: none;
+            background: transparent;
+
+            .card-header,
+            .card-footer {
+                border: none;
+                background: transparent;
+            }
+        }
+    }
+}

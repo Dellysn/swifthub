@@ -1,0 +1,38 @@
+#testimonial {
+    width: 100%;
+    position: relative;
+    height: auto;
+
+    .container-fluid {
+        top: 0;
+        left: 0;
+        right: 0;
+
+        .row {
+            height: auto;
+            color: var(--white);
+
+            .side-one {
+                background: url(../assets/img/background2.jpg) no-repeat;
+                background-size: cover;
+                // background-attachment: fixed;
+                background-position: center;
+                padding: 8rem;
+                // color:
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .side-two {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #333;
+                padding: 6rem;
+            }
+        }
+    }
+}

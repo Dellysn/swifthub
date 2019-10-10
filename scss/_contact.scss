@@ -1,0 +1,17 @@
+#contacts {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: var(--dark-overlay), url(../assets/img/bg5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-attachment: fixed;
+    color: var(--white);
+    font-weight: 600;
+
+    .row {
+        padding-top: 2.34rem;
+        padding-bottom: 2.34rem;
+    }
+}
