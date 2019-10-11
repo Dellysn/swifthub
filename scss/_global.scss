@@ -9,10 +9,12 @@ body {
   box-sizing: border-box;
   z-index: 99;
   background: #fff;
+  overflow-x: hidden;
 }
 
 #main {
   transition: margin-right .7s;
+  overflow-x: hidden;
 
 }
 

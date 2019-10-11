@@ -14,34 +14,84 @@ nav {
 
     }
 
-    .navbar-nav {
-        margin: 0 auto;
+    .nav-item {
+        position: relative;
 
-        .dropdown-menu {
-            top: 135%;
-            border-radius: 0;
-            background-color: #741717;
-            width: auto !important;
-            // padding-left: 4rem;
-            // display: flex;
-            column-count: 4;
-            column-rule: #333 solid 2px;
-
-            a {
-                color: var(--white);
-            }
+        &::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 5px;
+            background: var(--primary);
+            transition: var(--transition-hover);
+            position: absolute;
 
         }
 
-        .nav-item {
-            font-size: 100%;
+        &:hover::after {
+            width: 100%;
 
-            .nav-link {
-                color: var(--white) !important;
-                font-size: 1.3rem;
-                text-transform: uppercase;
-                font-weight: 700;
+        }
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+
+        .dropdown-toggle {
+            &::after {
+                display: none;
             }
+        }
+
+    }
+
+
+
+    #dropdown {
+
+        -webkit-column-count: 3;
+        column-count: 3;
+
+
+
+        h6 {
+            text-align: center;
+            font-size: .856rem;
+        }
+
+    }
+
+    .dropdown-menu {
+        top: 135%;
+        border-radius: 0;
+        background-color: #741717;
+        width: auto !important;
+        border: none;
+
+
+        // padding-left: 4rem;
+        // display: flex;
+        a {
+            color: var(--white);
+            transition: var(--transition-hover);
+
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+
+        color: var(--primary);
+    }
+
+    .nav-item {
+        font-size: 100%;
+
+        .nav-link {
+            color: var(--white) !important;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 700;
         }
 
         @media all and (max-width:999px) {
@@ -50,9 +100,12 @@ nav {
     }
 
 
-
-
 }
+
+
+
+
+
 
 .side-nav {
     height: 100%;
@@ -61,7 +114,7 @@ nav {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: var(--dark);
+    background-color: var(--primary);
     overflow-x: hidden;
     padding-top: 60px;
     transition: all .5s ease-out;

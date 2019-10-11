@@ -14,7 +14,7 @@ body {
 }
 
 :root {
-  --primary: #4fb3a2;
+  --primary: #68ddb6;
   --primary-transparent: #050607c7;
   --blue: #C9DBE4;
   --deep-grey: #333;
@@ -38,11 +38,13 @@ body {
   box-sizing: border-box;
   z-index: 99;
   background: #fff;
+  overflow-x: hidden;
 }
 
 #main {
   -webkit-transition: margin-right .7s;
   transition: margin-right .7s;
+  overflow-x: hidden;
 }
 
 #open {
@@ -212,11 +214,17 @@ img {
   padding-bottom: 4rem;
 }
 
-#partners .container .container .row .partners {
+#partners .container .row .partners {
   margin-bottom: 2rem;
 }
 
-#partners .container .action-btn {
+@media all and (max-width: 480px) {
+  #partners .container .row .partners .img-fluid {
+    max-width: 60%;
+  }
+}
+
+#partners .action-btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -395,7 +403,8 @@ img {
 }
 
 #testimonial .container-fluid .row .side-one {
-  background: url(../assets/img/background2.jpg) no-repeat;
+  background-image: var(--dark-overlay), url(../assets/img/background2.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 8rem;
@@ -412,6 +421,12 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+}
+
+#testimonial .container-fluid .row .side-one:hover {
+  background-size: 150%;
 }
 
 #testimonial .container-fluid .row .side-two {
@@ -432,6 +447,12 @@ img {
   padding: 6rem;
 }
 
+@media all and (max-width: 480px) {
+  #testimonial .container-fluid .row .side-two {
+    padding: 3rem;
+  }
+}
+
 nav {
   background: var(--dark);
   position: fixed;
@@ -448,32 +469,68 @@ nav .navbar-brand img {
   width: 100%;
 }
 
+nav .nav-item {
+  position: relative;
+}
+
+nav .nav-item::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 5px;
+  background: var(--primary);
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+  position: absolute;
+}
+
+nav .nav-item:hover::after {
+  width: 100%;
+}
+
 nav .navbar-nav {
   margin: 0 auto;
 }
 
-nav .navbar-nav .dropdown-menu {
+nav .navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+nav #dropdown {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+nav #dropdown h6 {
+  text-align: center;
+  font-size: .856rem;
+}
+
+nav .dropdown-menu {
   top: 135%;
   border-radius: 0;
   background-color: #741717;
   width: auto !important;
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-  -webkit-column-rule: #333 solid 2px;
-  -moz-column-rule: #333 solid 2px;
-  column-rule: #333 solid 2px;
+  border: none;
+  color: var(--primary);
 }
 
-nav .navbar-nav .dropdown-menu a {
+nav .dropdown-menu a {
   color: var(--white);
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
 }
 
-nav .navbar-nav .nav-item {
+nav .dropdown-menu a:hover {
+  color: var(--primary);
+}
+
+nav .nav-item {
   font-size: 100%;
 }
 
-nav .navbar-nav .nav-item .nav-link {
+nav .nav-item .nav-link {
   color: var(--white) !important;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -481,7 +538,7 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 @media all and (max-width: 999px) {
-  nav .navbar-nav {
+  nav .nav-item {
     display: none;
   }
 }
@@ -493,7 +550,7 @@ nav .navbar-nav .nav-item .nav-link {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: var(--dark);
+  background-color: var(--primary);
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: all .5s ease-out;
@@ -580,6 +637,24 @@ nav .navbar-nav .nav-item .nav-link {
   position: relative;
   font-weight: 100;
   margin-bottom: 2rem;
+  padding: 0;
+  position: relative;
+}
+
+#fancy-box .fancy-box::after {
+  content: "";
+  display: block;
+  width: 0%;
+  background: var(--white);
+  height: 5px;
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+  position: absolute;
+  bottom: 0;
+}
+
+#fancy-box .fancy-box:hover::after {
+  width: 100%;
 }
 
 footer {
