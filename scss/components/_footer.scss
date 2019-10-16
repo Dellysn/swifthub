@@ -76,7 +76,9 @@ footer {
 
 
     .top {
-        background: var(--deep-grey);
+        background-color: var(--dark-overlay);
+        background-size: 0;
+        transform: scale(1);
         border: 2px solid var(--deep-grey);
         border-radius: 50%;
         height: 40px;
@@ -89,11 +91,15 @@ footer {
         right: 5%;
         bottom: 8%;
         position: fixed;
+        transition: var(--transition-hover);
 
         i {
             color: #fff;
         }
 
-
+        &:hover {
+            background-color: var(--blue);
+            transform: scale(1.2);
+        }
     }
 }

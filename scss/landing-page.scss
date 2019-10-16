@@ -27,15 +27,22 @@ body {
 @import "question.scss";
 @import "count.scss";
 @import "contact.scss";
+@import "focus.scss";
 @import "donate.scss";
 @import "publication.scss";
 @import "testimonial.scss";
+@import "teams.scss";
 
 
 // Components
 @import "components/navigation.scss";
 @import "components/fancy-box.scss";
 @import "components/footer.scss";
+@import "components/carousel.scss";
+@import "components/card.scss";
+@import "components/button.scss";
+@import "components/flip-card.scss";
+@import "components/hover-card_effect.scss";
 
 #top {
     background: url(../assets/img/background.jpg) no-repeat;

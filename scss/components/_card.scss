@@ -1,0 +1,47 @@
+ .container {
+     .row {
+         margin-top: 2rem;
+
+         .card {
+             background: transparent;
+             color: inherit;
+             border-radius: 0;
+             border: none;
+
+             .card-header {
+                 border: none;
+                 background: transparent;
+             }
+
+             .card-footer {
+                 background: transparent;
+                 border: none;
+             }
+         }
+     }
+ }
+
+ .container-fluid {
+     background-color: var(--dark);
+
+     .row {
+         margin-top: 2rem;
+
+         .card {
+             background: transparent;
+             color: inherit;
+             border-radius: 0;
+             border: none;
+
+             .card-header {
+                 border: none;
+                 background: transparent;
+             }
+
+             .card-footer {
+                 background: transparent;
+                 border: none;
+             }
+         }
+     }
+ }

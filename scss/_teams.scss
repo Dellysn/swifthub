@@ -1,0 +1,27 @@
+#teams {
+    background-color: var(--dark);
+    color: var(--white);
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+
+    .row {
+        padding: 0;
+        margin: 0;
+
+        [class^="col"] {
+            padding: 0;
+
+            img {
+                height: 100%;
+
+            }
+
+        }
+    }
+
+
+
+}

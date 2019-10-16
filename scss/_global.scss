@@ -8,14 +8,19 @@ body {
   margin: 0;
   box-sizing: border-box;
   z-index: 99;
-  background: #fff;
+  // background: #6d0c14;
   overflow-x: hidden;
 }
 
 #main {
   transition: margin-right .7s;
   overflow-x: hidden;
+  border: #444 solid 2px;
 
+}
+
+.text-underline {
+  text-decoration: underline;
 }
 
 #open {
@@ -24,7 +29,7 @@ body {
   color: var(--white);
   display: none;
 
-  @media all and (max-width:768px) {
+  @media all and (max-width:999px) {
     display: block !important;
   }
 }

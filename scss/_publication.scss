@@ -11,21 +11,6 @@
     justify-content: center;
     color: var(--white);
 
-    .container {
-        .row {
-            margin-top: 2rem;
 
-            .card {
-                background: transparent;
-                color: inherit;
-                border-radius: 0;
-                border: none;
 
-                .card-header {
-                    border: none;
-                    background: transparent;
-                }
-            }
-        }
-    }
 }

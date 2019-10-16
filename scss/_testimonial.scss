@@ -3,10 +3,12 @@
     position: relative;
     height: auto;
 
+
     .container-fluid {
         top: 0;
         left: 0;
         right: 0;
+        background-color: var(--white);
 
         .row {
             height: auto;
