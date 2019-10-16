@@ -8,9 +8,17 @@
              border-radius: 0;
              border: none;
 
+             @media all and (max-width: 600px) {
+                 margin-bottom: 3rem;
+             }
+
              .card-header {
                  border: none;
                  background: transparent;
+             }
+
+             .card-title {
+                 color: var(--white);
              }
 
              .card-footer {
@@ -32,11 +40,16 @@
              color: inherit;
              border-radius: 0;
              border: none;
+             color: var(--white);
 
              .card-header {
                  border: none;
                  background: transparent;
+
+
              }
+
+
 
              .card-footer {
                  background: transparent;

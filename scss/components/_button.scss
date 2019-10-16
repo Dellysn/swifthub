@@ -26,12 +26,12 @@
     background-color: transparent;
     color: var(--dark);
     border-radius: 50px;
-    border: var(--deep-grey) 2px solid;
+    border: var(--light-grey) 2px solid;
     transition: var(--transition-hover);
 
 
     &:hover {
-        background-color: var(--deep-grey);
+        background-color: var(--light-grey);
         color: var(--white);
 
     }
@@ -62,6 +62,41 @@
 
     &:hover {
         background-color: var(--deep-grey);
+        color: var(--white);
+
+    }
+
+}
+
+.btn.btn-primary.red {
+    background-color: var(--deep-red);
+    color: var(--dark);
+    border-radius: 50px;
+    border: none;
+    transition: var(--transition-hover);
+    font-size: .87rem;
+
+    &:hover {
+        background-color: var(--light-grey);
+        color: var(--white);
+
+    }
+
+}
+
+.btn.btn-primary.red_light {
+    background-color: var(--light-red);
+    color: var(--whitek);
+    border-radius: 50px;
+    border: var(--light-red) solid;
+    transition: var(--transition-hover);
+    font-size: .87rem;
+
+
+    &:active,
+    &:link,
+    &:hover {
+        background-color: var(--light-red);
         color: var(--white);
 
     }

@@ -56,3 +56,12 @@ h6 {
 img {
   width: 100%;
 }
+
+a {
+  color: var(--white);
+  transition: var(--transition-hover);
+
+  &:hover {
+    color: var(--deep-red);
+  }
+}

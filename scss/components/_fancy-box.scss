@@ -2,6 +2,7 @@
     overflow: hidden;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    color: var(--white);
 
     .parent {
         overflow: hidden;
@@ -52,6 +53,8 @@
         margin-bottom: 2rem;
         padding: 0;
         position: relative;
+
+
 
         &::after {
             content: "";

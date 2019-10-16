@@ -1,13 +1,12 @@
 .flip-card {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
     height: 500px;
     position: relative;
     perspective: 1000px;
 
 
     &:hover .flip-card-inner {
-        transform: rotateY(180deg) scaleY(1.2);
+        transform: rotateY(180deg);
         // transform: ;
     }
 
@@ -35,17 +34,37 @@
         }
 
         .flip_card-front {
-            background-image: url(../../assets/img/bg1.jpg);
-            background-repeat: no-repeat;
-
+            background: var(--deep-red);
             transform: rotateY(180deg);
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
 
         }
 
         .flip_card-back {
-            background: var(--deep-red);
+
             // opacity: 0.5;
+            background-image: var(--dark-overlay-card), url(../../assets/img/bg2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+
+
         }
     }
 }
