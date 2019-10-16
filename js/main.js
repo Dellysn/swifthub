@@ -21,3 +21,12 @@ document.querySelector("#close").addEventListener("click", function(e) {
   document.querySelector(".side-nav").style.width = "0";
   document.getElementById("main").style.marginRight = "0";
 });
+
+var $loading = $("#loadingDiv").hide();
+$(document)
+  .ajaxStart(function() {
+    $loading.show();
+  })
+  .ajaxStop(function() {
+    $loading.hide();
+  });

@@ -42,6 +42,7 @@ body {
   box-sizing: border-box;
   z-index: 99;
   overflow-x: hidden;
+  position: relative;
 }
 
 #main {
@@ -1306,6 +1307,25 @@ footer .top:hover {
 
 .side-card .side-card_image img {
   height: 100%;
+}
+
+#loadingDiv {
+  position: fixed;
+  background: var(--white);
+  height: 100%;
+  width: 100%;
+  z-index: 111;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #top {
