@@ -89,7 +89,7 @@ nav {
     border: none;
 
     text-align: center;
-    transition: all 5s ease-out;
+    transition: var(--transition-hover);
 
 
     .dropdown-item {}
@@ -128,17 +128,21 @@ nav {
     align-items: center;
     justify-content: center;
 
-    li {
+    ul {
+        text-align: center;
+    }
 
+    li {
+        font-size: 25px;
 
         a {
 
             padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 25px;
-            color: #818181;
 
+            color: #818181;
             transition: 0.3s;
+
 
 
             &:hover {

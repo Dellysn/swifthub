@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  ;
 }
 
 body {
@@ -42,6 +45,16 @@ body {
   font-size: 36px;
   margin-left: 50px;
   color: #444;
+}
+
+.dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.white-bg {
+  color: var(--dark);
+  background-color: var(--white) !important;
 }
 
 h1,
