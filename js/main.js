@@ -22,6 +22,7 @@ document.querySelector("#close").addEventListener("click", function(e) {
   document.getElementById("main").style.marginRight = "0";
 });
 
+//  Custom Ajax Loader
 var $loading = $("#loadingDiv").hide();
 $(document)
   .ajaxStart(function() {
@@ -30,3 +31,21 @@ $(document)
   .ajaxStop(function() {
     $loading.hide();
   });
+
+// Dropdown Hover function
+$("ul.navbar-nav li.dropdown").hover(
+  function() {
+    $(this)
+      .find(".dropdown-menu")
+      .stop(true, true)
+      .delay(200)
+      .fadeIn(500);
+  },
+  function() {
+    $(this)
+      .find(".dropdown-menu")
+      .stop(true, true)
+      .delay(200)
+      .fadeOut(500);
+  }
+);

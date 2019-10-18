@@ -71,25 +71,28 @@ nav {
 
 
 #dropdown {
-    -webkit-column-count: 3;
-    column-count: 3;
-    -webkit-column-rule: #333 dashed 1px;
-    // display: table;
+
 
     h6 {
         text-align: center;
         font-size: .856rem;
+        padding: .6rem;
     }
 
 }
 
 .dropdown-menu {
-    top: 135%;
+    top: 142%;
     border-radius: 0;
     background-color: #741717;
     width: auto !important;
     border: none;
 
+    text-align: center;
+    transition: all 5s ease-out;
+
+
+    .dropdown-item {}
 
     // padding-left: 4rem;
     // display: flex;
@@ -104,6 +107,8 @@ nav {
     }
 
     color: var(--primary);
+
+
 }
 
 .side-nav {

@@ -576,24 +576,21 @@ nav .nav-item .nav-link {
   display: none;
 }
 
-#dropdown {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-rule: #333 dashed 1px;
-}
-
 #dropdown h6 {
   text-align: center;
   font-size: .856rem;
+  padding: .6rem;
 }
 
 .dropdown-menu {
-  top: 135%;
+  top: 142%;
   border-radius: 0;
   background-color: #741717;
   width: auto !important;
   border: none;
+  text-align: center;
+  -webkit-transition: all 5s ease-out;
+  transition: all 5s ease-out;
   color: var(--primary);
 }
 
