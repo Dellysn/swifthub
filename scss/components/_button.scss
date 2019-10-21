@@ -3,6 +3,8 @@
     text-transform: uppercase;
     font-weight: 100;
 
+
+
     i {
         position: absolute;
         z-index: -1;
@@ -24,14 +26,14 @@
 
 .btn.btn-primary {
     background-color: transparent;
-    color: var(--dark);
+    color: var(--deep-grey);
     border-radius: 50px;
-    border: var(--light-grey) 2px solid;
+    border: var(--light-green) 2px solid;
     transition: var(--transition-hover);
 
 
     &:hover {
-        background-color: var(--light-grey);
+        background-color: var(--light-green);
         color: var(--white);
         box-shadow: var(--box-shadow_light);
 
@@ -41,7 +43,7 @@
 
 .btn.btn-primary.blue {
     background-color: var(--blue);
-    color: var(--dark);
+    color: var(--white);
     border-radius: 50px;
     border: none;
     transition: var(--transition-hover);
@@ -56,14 +58,14 @@
 }
 
 .btn.btn-primary.green {
-    background-color: var(--primary);
+    background-color: var(--deep-green);
     color: var(--dark);
     border-radius: 50px;
     border: none;
     transition: var(--transition-hover);
 
     &:hover {
-        background-color: var(--deep-grey);
+        background-color: var(--deep-green);
         color: var(--white);
         box-shadow: var(--box-shadow_light);
 
@@ -71,8 +73,8 @@
 
 }
 
-.btn.btn-primary.red {
-    background-color: var(--deep-red);
+.btn.btn-primary.primary {
+    background-color: var(--deep-green);
     color: var(--dark);
     border-radius: 50px;
     border: none;
@@ -80,7 +82,7 @@
     font-size: .87rem;
 
     &:hover {
-        background-color: var(--light-grey);
+        background-color: var(--light-green);
         color: var(--white);
         box-shadow: var(--box-shadow_light);
 
@@ -89,8 +91,8 @@
 
 }
 
-.btn.btn-primary.red_light {
-    background-color: var(--light-red);
+.btn.btn-primary.primary_light {
+    background-color: var(--light-green);
     color: var(--whitek);
     border-radius: 50px;
     border: var(--light-red) solid;
@@ -101,7 +103,7 @@
     &:active,
     &:link,
     &:hover {
-        background-color: var(--light-red);
+        background-color: var(--light-green);
         color: var(--white);
         box-shadow: var(--box-shadow_light);
     }

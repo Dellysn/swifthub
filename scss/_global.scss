@@ -11,7 +11,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   z-index: 99;
-  // background: #6d0c14;
+
   overflow-x: hidden;
   position: relative;
 }
@@ -76,6 +76,7 @@ a {
   transition: var(--transition-hover);
 
   &:hover {
-    color: var(--deep-red);
+    color: var(--deep-green);
+    font-weight: 300;
   }
 }

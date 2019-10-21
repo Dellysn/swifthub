@@ -5,8 +5,8 @@ nav {
     left: 0;
 
     .navbar-brand {
-        width: 50px;
-        height: auto;
+        width: 100px;
+        height: 100px;
 
         img {
             width: 100%;
@@ -45,6 +45,7 @@ nav {
             font-weight: 700;
             width: auto;
             margin: 0 6px;
+
 
 
         }
@@ -118,7 +119,7 @@ nav {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: var(--primary);
+    background-color: var(--light-green);
     overflow-x: hidden;
     padding-top: 60px;
     transition: all .5s ease-out;

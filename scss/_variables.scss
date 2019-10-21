@@ -2,24 +2,46 @@
 
 // Restated Bootstrap Variables
 :root {
-    --primary: #68ddb6;
+
     --primary-transparent: #050607c7;
-    --blue: #2b90c3;
+    --blue: #024873;
+    --deep-blue: #024873;
     --deep-grey: #333;
     --light-grey: #a1a1a1;
-    --light-slight-grey: #a1a1a188;
+    --light-slight-grey: #b6b4b459;
     --dark: #050607;
     --transition-hover: all .2s ease-out;
     --LightSlateGrey: #98b2ba;
     --white: #fff;
-    --deep-red: #6d0c14;
-    --light-red: #ff3269;
-    --dark-overlay: linear-gradient(to right top, #000307b6, #000307b6, #000307b6, #000307b6, #000307b6);
-    --dark-overlay-card: linear-gradient(to right top, #00030783, #00030783, #00030783, #00030783, #00030783);
+    --light-green: #73FBD3;
+    --deep-green: #04D98B;
+    --dark-overlay: linear-gradient(to right top, rgba(4, 217, 139, 0.363), rgba(4, 217, 139, 0.363), rgba(4, 217, 139, 0.363), rgba(4, 217, 139, 0.363), rgba(4, 217, 139, 0.363));
+    --dark-overlay-card: linear-gradient(to right top, rgba(4, 217, 139, 0.301), rgba(4, 217, 139, 0.301), rgba(4, 217, 139, 0.301), rgba(4, 217, 139, 0.301), rgba(4, 217, 139, 0.301));
     --box-shadow_light: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    --box-shadow_green: 0 .5rem .5rem rgba(4, 217, 139, 0.123);
 }
 
 // Cadet Blue: #4fb3a2
 // Light Steel Blue: #C9DBE4
 // Dark Slate Grey: #050607
 // Light Slate Grey: #98b2ba
+/* Color Theme Swatches in Hex */
+$logo-1-hex: #0583F2;
+$logo-2-hex: #024873;
+$logo-3-hex: #04D98B;
+$logo-4-hex: #05F283;
+$logo-5-hex: #0D0D0D;
+
+/* Color Theme Swatches in RGBA */
+$logo-1-rgba: rgba(5, 131, 242, 1);
+$logo-2-rgba: rgba(2, 72, 115, 1);
+$logo-3-rgba: rgba(4, 217, 139, 1);
+$logo-4-rgba: rgba(5, 242, 131, 1);
+$logo-5-rgba: rgba(13, 13, 13, 1);
+
+/* Color Theme Swatches in HSLA */
+$logo-1-hsla: hsla(208, 95, 48, 1);
+$logo-2-hsla: hsla(202, 96, 22, 1);
+$logo-3-hsla: hsla(158, 96, 43, 1);
+$logo-4-hsla: hsla(151, 95, 48, 1);
+$logo-5-hsla: hsla(0, 0, 5, 1);

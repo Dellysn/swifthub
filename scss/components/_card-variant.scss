@@ -1,15 +1,43 @@
 .card.card-variant {
-    background: var(--light-grey) !important;
-    padding: 3rem;
+    background: var(--light-slight-grey) !important;
+
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    .card-body {
+        padding: 3rem;
 
+        h6 {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    .card-footer {
+        padding-bottom: 2rem;
+
+    }
 }
 
 .card.card-variant-2 {
     background: var(--light-slight-grey) !important;
-    padding: 3rem;
+
     height: 400px;
+
+    .card-body {
+        padding: 2.5rem;
+
+        h6 {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    .card-footer {
+        padding-bottom: 2rem;
+
+    }
 
 
 }
@@ -17,15 +45,17 @@
 .card.card-variant,
 .card.card-variant-2 {
     transition: all .1s linear;
+    box-shadow: var(--box-shadow_green);
 
     &:hover {
 
         box-shadow: var(--box-shadow_light);
-        background-color: var(--deep-red) !important;
+        background-color: var(--deep-green) !important;
         color: var(--white);
     }
 
-    &:hover .red {
-        border: solid 1px var(--white);
+    &:hover .primary {
+        border: solid 2px var(--white);
+        color: var(--white);
     }
 }

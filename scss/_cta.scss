@@ -4,10 +4,14 @@
     width: 100%;
     background-color: #fff;
 
+
     .container {
+
         .row {
             justify-content: center;
             align-items: center;
+            transition: var(--transition-hover);
+
             // width: 100%;
 
             h1 {
