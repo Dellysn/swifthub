@@ -1,8 +1,39 @@
-#fancy-box {
+.fancy-box_parent {
     overflow: hidden;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--white);
+
+
+
+    .fancy-box {
+        overflow: hidden;
+        height: 400px;
+        color: var(--white);
+        border-radius: 0;
+        position: relative;
+        font-weight: 100;
+        margin-bottom: 2rem;
+        padding: 0;
+        position: relative;
+
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0%;
+            background: var(--white);
+            height: 5px;
+            transition: var(--transition-hover);
+            position: absolute;
+            bottom: 0;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
 
     .parent {
         overflow: hidden;
@@ -40,35 +71,6 @@
         &:hover .bg-7,
         &:focus .bg-7 {
             background-size: 175%;
-        }
-    }
-
-    .fancy-box {
-        overflow: hidden;
-        height: 400px;
-        color: var(--white);
-        border-radius: 0;
-        position: relative;
-        font-weight: 100;
-        margin-bottom: 2rem;
-        padding: 0;
-        position: relative;
-
-
-
-        &::after {
-            content: "";
-            display: block;
-            width: 0%;
-            background: var(--white);
-            height: 5px;
-            transition: var(--transition-hover);
-            position: absolute;
-            bottom: 0;
-        }
-
-        &:hover::after {
-            width: 100%;
         }
     }
 }

@@ -26,6 +26,10 @@
                 align-items: center;
                 transition: var(--transition-hover);
 
+                @media all and (max-width:480px) {
+                    padding: 1.5rem;
+                }
+
                 &:hover {
                     background-size: 150%;
                 }

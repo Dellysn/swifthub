@@ -33,19 +33,35 @@ $(document)
   });
 
 // Dropdown Hover function
-$("ul.navbar-nav li.dropdown").hover(
+$("nav ul.navbar-nav li.dropdown").hover(
   function() {
     $(this)
       .find(".dropdown-menu")
       .stop(true, true)
-
-      .slideDown(500);
+      .fadeIn(500)
+      .delay(2000);
   },
   function() {
     $(this)
       .find(".dropdown-menu")
       .stop(true, true)
-
-      .slideUp(500);
+      .fadeOut(500)
+      .delay(2000);
+  }
+);
+$("#sidebar > ul.navbar-nav li.dropdown").hover(
+  function() {
+    $(this)
+      .find(".dropdown-menu")
+      .stop(true, true)
+      .slideDown(500)
+      .delay(2000);
+  },
+  function() {
+    $(this)
+      .find(".dropdown-menu")
+      .stop(true, true)
+      .slideUp(1000)
+      .delay(2000);
   }
 );

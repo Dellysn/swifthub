@@ -1,0 +1,60 @@
+.popup {
+    background: var(--primary-transparent);
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-hover);
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__content {
+        // color: #fff;
+        background: #fff;
+        width: 60%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        @media all and (max-width:480px) {
+            width: 90%;
+            background-color: red;
+        }
+    }
+
+    .card {
+        border: none;
+
+        .card-header {
+            background: transparent;
+            border: none;
+            padding: 2rem;
+
+
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .card-footer {
+            background: transparent;
+            border: none;
+
+
+        }
+    }
+
+}

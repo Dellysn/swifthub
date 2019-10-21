@@ -1,0 +1,70 @@
+.fadeIn {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-out;
+  transform: translateX(-800px);
+  animation: fadeIn 1.2s 1 forwards;
+  animation-delay: 1s;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+    visibility: visible;
+    transform: translateX(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+  }
+}
+
+.fadeIn-2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-out;
+  transform: translateX(800px);
+  animation: fadeIn2 1.5s 1 forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0.5;
+    visibility: visible;
+    transform: translateX(500px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+  }
+}
+
+.fadeUp {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-out;
+  transform: translateY(800px);
+  animation: fadeIn 1.2s 1 forwards;
+  animation-delay: 1s;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+    visibility: visible;
+    transform: translateY(500px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}

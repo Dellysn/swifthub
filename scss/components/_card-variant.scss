@@ -1,12 +1,31 @@
-.card-variant {
+.card.card-variant {
     background: var(--light-grey) !important;
     padding: 3rem;
     height: 400px;
 
+
 }
 
-.card-variant-2 {
+.card.card-variant-2 {
     background: var(--light-slight-grey) !important;
     padding: 3rem;
     height: 400px;
+
+
+}
+
+.card.card-variant,
+.card.card-variant-2 {
+    transition: all .1s linear;
+
+    &:hover {
+
+        box-shadow: var(--box-shadow_light);
+        background-color: var(--deep-red) !important;
+        color: var(--white);
+    }
+
+    &:hover .red {
+        border: solid 1px var(--white);
+    }
 }

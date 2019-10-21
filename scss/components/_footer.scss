@@ -102,4 +102,34 @@ footer {
             transform: scale(1.2);
         }
     }
+
+    .sticky_popup {
+        position: absolute;
+        right: 1%;
+        bottom: 2%;
+        position: fixed;
+        background: var(--white);
+        box-shadow: var(--box-shadow_light);
+        border-radius: 21px;
+        padding: .5rem;
+
+        &:active {
+            transform: translateY(-2px);
+        }
+
+        a {
+
+            padding: 2.5rem;
+            color: var(--dark);
+            transition: var(--transition-hover);
+
+            &:hover {
+                text-decoration: none;
+            }
+
+
+
+        }
+
+    }
 }
