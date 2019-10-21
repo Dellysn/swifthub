@@ -1481,7 +1481,8 @@ footer .sticky_popup a:hover {
 }
 
 .side-image-card .row .side-card_image_1 {
-  background: url(../../assets/img/bg10.jpg) no-repeat;
+  background-image: url(../assets/img/bg10.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -1503,7 +1504,8 @@ footer .sticky_popup a:hover {
 }
 
 .side-image-card .row .side-card_image_2 {
-  background: url(../../assets/img/bg11.jpg) no-repeat;
+  background-image: url(../assets/img/bg11.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 80vh;
