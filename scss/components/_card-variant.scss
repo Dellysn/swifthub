@@ -1,6 +1,4 @@
 .card.card-variant {
-    background: var(--light-slight-grey) !important;
-
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -22,8 +20,6 @@
 }
 
 .card.card-variant-2 {
-    background: var(--light-slight-grey) !important;
-
     height: 400px;
 
     .card-body {
@@ -46,15 +42,16 @@
 .card.card-variant-2 {
     transition: all .1s linear;
     box-shadow: var(--box-shadow_green);
+    background-color: var(--deep-green) !important;
+
 
     &:hover {
 
         box-shadow: var(--box-shadow_light);
-        background-color: var(--deep-green) !important;
         color: var(--white);
     }
 
-    &:hover .primary {
+    .primary {
         border: solid 2px var(--white);
         color: var(--white);
     }

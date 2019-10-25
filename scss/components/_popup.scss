@@ -20,31 +20,45 @@
 
     &__content {
         // color: #fff;
-        background: var(--blue);
+        background: var(--white);
         width: 60%;
-        height: 50vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
         @media all and (max-width:480px) {
-            width: 90%;
-            background-color: red;
+            width: 100%;
+
+        }
+
+        .contact_alternative {
+            p {
+                a {
+                    color: var(--dark);
+                }
+            }
         }
     }
 
     .card {
         border: none;
         border-radius: 0;
-        background: var(--white);
         color: var(--dark);
         height: 100%;
+        width: 65%;
+        padding: 1.2rem;
+
+        @media all and (max-width:480px) {
+            width: 100%;
+
+        }
 
         .card-header {
             background: transparent;
             border: none;
-            padding: 2rem;
+            padding: 1rem;
         }
 
         .card-body {
@@ -55,8 +69,13 @@
         .card-footer {
             background: transparent;
             border: none;
+            padding: 1.5rem;
+            ;
 
+            @media all and (max-width:480px) {
+                margin-top: 0;
 
+            }
         }
     }
 

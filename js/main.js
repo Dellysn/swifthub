@@ -38,15 +38,15 @@ $("nav ul.navbar-nav li.dropdown").hover(
     $(this)
       .find(".dropdown-menu")
       .stop(true, true)
-      .fadeIn(500)
-      .delay(2000);
+
+      .fadeIn(500);
   },
   function() {
     $(this)
       .find(".dropdown-menu")
       .stop(true, true)
-      .fadeOut(500)
-      .delay(2000);
+      .delay(500)
+      .fadeOut(500);
   }
 );
 $("#sidebar > ul.navbar-nav li.dropdown").hover(
