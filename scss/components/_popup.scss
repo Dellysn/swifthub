@@ -28,9 +28,8 @@
         align-items: center;
         justify-content: center;
 
-        @media all and (max-width:480px) {
+        @media all and (max-width: 480px) {
             width: 100%;
-
         }
 
         .contact_alternative {
@@ -50,9 +49,9 @@
         width: 65%;
         padding: 1.2rem;
 
-        @media all and (max-width:480px) {
-            width: 100%;
 
+        @media all and (max-width: 480px) {
+            width: 100%;
         }
 
         .card-header {
@@ -63,20 +62,18 @@
 
         .card-body {
             padding: 2rem;
-
         }
 
         .card-footer {
             background: transparent;
             border: none;
             padding: 1.5rem;
-            ;
 
-            @media all and (max-width:480px) {
+
+
+            @media all and (max-width: 480px) {
                 margin-top: 0;
-
             }
         }
     }
-
 }

@@ -1,1 +1,4 @@
 node_modules
+js/aos
+js/slick.min.js
+js/tiny-slider.js

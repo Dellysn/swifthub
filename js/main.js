@@ -65,3 +65,17 @@ $("#sidebar > ul.navbar-nav li.dropdown").hover(
       .delay(2000);
   }
 );
+
+// Navigation Bar Active Toggle
+// navBtn = document.querySelectorAll(".nav-item");
+// activeToggles = [...navBtn];
+
+// activeToggles.forEach(nav => {
+//   nav.addEventListener("click", e => {
+//     let active = document.querySelector(".active");
+//     if (e != null) {
+//       active.classList.remove("active");
+//     }
+//     e.target.className = "active";
+//   });
+// });

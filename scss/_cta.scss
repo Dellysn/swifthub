@@ -17,6 +17,8 @@
             h1 {
                 padding-top: 1.4rem;
             }
+
+
         }
     }
 
@@ -24,56 +26,96 @@
         overflow: hidden;
         background-image: var(--dark-overlay-card), url(../assets/img/bg1.jpg);
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: cover;
         background-position: center;
         transition: .45s ease all;
+
+        &:hover .bg-1,
+        &:focus .bg-1 {
+            background-size: 175%;
+            background-position: left;
+            transform: scale(1.2);
+        }
     }
 
     .bg-2 {
         background-image: var(--dark-overlay-card), url(../assets/img/bg2.jpg);
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: cover;
         background-position: center;
         transition: .45s ease all;
+
+        &:hover .bg-2,
+        &:focus .bg-2 {
+            background-size: 175%;
+        }
+
     }
 
     .bg-3 {
         background-image: var(--dark-overlay-card), url(../assets/img/bg3.jpg);
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: cover;
         background-position: center;
         transition: .45s ease all;
+
+        &:hover .bg-3,
+        &:focus .bg-3 {
+            background-size: 175%;
+        }
+
     }
 
     .bg-4 {
         background-image: var(--dark-overlay-card), url(../assets/img/bg4.jpg);
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: cover;
         background-position: center;
         transition: .45s ease all;
+
+        &:hover .bg-4,
+        &:focus .bg-4 {
+            background-size: 175%;
+        }
+
     }
 
     .bg-5 {
         background-image: var(--dark-overlay-card), url(../assets/img/bg5.jpg);
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: cover;
         background-position: center;
         transition: .45s ease all;
+
+        &:hover .bg-5,
+        &:focus .bg-5 {
+            background-size: 175%;
+        }
     }
 
     .bg-6 {
         background-image: var(--dark-overlay-card), url(../assets/img/bg6.jpg);
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: cover;
         background-position: center;
         transition: .45s ease all;
+
+        &:hover .bg-6,
+        &:focus .bg-6 {
+            background-size: 175%;
+        }
     }
 
     .bg-7 {
         background-image: var(--dark-overlay-card), url(../assets/img/bg7.jpg);
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: cover;
         background-position: center;
         transition: .45s ease all;
+
+        &:hover .bg-7,
+        &:focus .bg-7 {
+            background-size: 175%;
+        }
     }
 }

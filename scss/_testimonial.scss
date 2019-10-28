@@ -13,6 +13,7 @@
         .row {
             height: auto;
             color: var(--white);
+            transition: var(--transition-hover);
 
             .side-one {
                 background-image: var(--dark-overlay), url(../assets/img/background2.jpg);
@@ -24,13 +25,14 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transition: var(--transition-hover);
+
 
                 @media all and (max-width:480px) {
                     padding: 1.5rem;
                 }
 
                 &:hover {
+
                     background-size: 150%;
                 }
             }
